@@ -1,0 +1,17 @@
+.highlight{
+    background-color: yellow!important;
+}
+
+.box{
+    border:1px solid black;
+    width:50%;
+}
+
+#blue{
+    background-color:blue;
+    height:50px;;
+}
+#red{
+    background-color:red;
+    height:50px;;
+}
