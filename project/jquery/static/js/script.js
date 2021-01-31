@@ -32,15 +32,30 @@ $(document).ready(function(){
     var result = $('#dog').parent();
     //console.log(result);
 
-    // CLICK EVENT
-    $('#red, #blue').on('click',function(){
+    // CLICK EVENT EXE por ID
+
+    /*
+    $('#blue, #red').on('click',function(){
         console.log(this.id);
         console.log($(this));
 
-        if( this.id == ('blue' || 'red')){
+        if (this.id == 'red' || 'blue') {
             $(this).addClass('highlight');
         }
+
     });
+    */
+
+    $('#blue, #red').on('click',function(){
+    
+    // toggleClass -> se não tem a classe ele ADD, se tiver ele Remove
+    // uma espécie de light switch ... mas podemos fazer o msm com if else
+    // somados ao removeClass e addClass
+    $(this).toggleClass('highlight')
+
+});
+
+
 
 
 
