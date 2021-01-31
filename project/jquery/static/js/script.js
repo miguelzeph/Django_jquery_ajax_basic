@@ -46,6 +46,7 @@ $(document).ready(function(){
     });
     */
 
+    // CLICK EVENT func toggle
     $('#blue, #red').on('click',function(){
     
     // toggleClass -> se não tem a classe ele ADD, se tiver ele Remove
@@ -53,7 +54,52 @@ $(document).ready(function(){
     // somados ao removeClass e addClass
     $(this).toggleClass('highlight')
 
-});
+    });
+
+
+    $('.box').on('click','button.switch',function(){
+        console.log($(this));
+
+        $(this).parent().toggleClass('highlight');
+    });
+
+
+
+    $(".box").on('click','button', function(){
+        var selected = $('#place option:selected');
+        var value = selected.val();
+        //var price = selected.attr('data-price');
+        var price = selected.data('price');
+
+        console.log(selected)
+
+        console.log(value);
+        console.log(price);
+        console.log(selected.attr('data-price'));
+
+        $('#result').html(value+' '+price);
+    });
+
+
+    // CHANGE
+    $(".box").on('change','select', function(){
+        var selected = $('#place2 option:selected');
+        var value = selected.val();
+        var price = selected.data('price');
+
+        $('#result2').html(value+' '+price);
+    });
+
+
+    // KEYBOARD EVENTS
+    //keydown - Dispara quando você pressiona a tecla
+    //keyup - dispara quando você solta a tecla
+    $('.box').on('keydown','input',function(){
+        $('#result3').html('Your name is: '+$(this).val());
+    });
+
+
+
 
 
 
