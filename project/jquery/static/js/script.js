@@ -99,10 +99,22 @@ $(document).ready(function(){
     });
 
 
+    $('#add-container').on('click','button',function(){
+        var value = $('#add-container input').val();
+        //console.log(value);
 
+        var html = '<div class = "item">\
+        <div class = "remove">X</div>'
+        + value +
+        '</div>';
 
+        //console.log(html);
 
-
+        //Adiciona no fim do HTML (div)
+        $('#places-container').append(html); 
+        //Adiciona no ínicio do HTML (div)
+        $('#places-container').prepend(html); 
+    });
 
 
 });
