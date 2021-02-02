@@ -98,7 +98,7 @@ $(document).ready(function(){
         $('#result3').html('Your name is: '+$(this).val());
     });
 
-
+    // DOM - ADD ELEMENTS
     $('#add-container').on('click','button',function(){
         var value = $('#add-container input').val();
         //console.log(value);
@@ -114,6 +114,29 @@ $(document).ready(function(){
         $('#places-container').append(html); 
         //Adiciona no ínicio do HTML (div)
         $('#places-container').prepend(html); 
+    });
+
+    //DOM - REMOVE ELEMENTS
+    //$('#places-container .remove').on('click',function(){
+    $('#places-container').on('click','.remove',function(){
+
+        //var parent = $(this).parent().remove();
+        //console.log(parent);
+        $(this).parent().remove();
+    });
+
+
+    //DOM - manipulate text
+    $('#escrita').on('click',function(){
+        //$('#escrita').text('kkkkkkkkkk');
+        $('#escrita').html('\
+        <h2>TCHARAM</h2>');
+    });
+
+    //DOM -  Create atribut in the tag
+    $('#escrita').on('click',function(){
+        $('#escrita').attr('new-atribute',12345);
+
     });
 
 
