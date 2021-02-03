@@ -19,3 +19,17 @@
 .remove{
     float:right;
 }
+
+.more-info{
+    margin-top: 20px;
+    display: none;
+}
+
+.example{
+    position:relative;
+    left:20px;
+    width:100px;
+    height:100px;
+    margin-top:20px;
+    background-color:rgb(41, 184, 12);
+}
