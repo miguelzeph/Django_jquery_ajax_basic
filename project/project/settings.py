@@ -39,6 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     # Jquery Study
     'jquery',
+    # Ajax Study
+    'ajax',
 ]
 
 MIDDLEWARE = [
