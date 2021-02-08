@@ -1,0 +1,40 @@
+{%extends 'jquery_templates/base.html'%}
+
+
+{%block title%}<title>Home</title>{%endblock%}
+{%block content%}
+
+
+<!--importar script e css-->
+{%load static%}
+<script src="{% static 'jquery_static/js/fruits_vegetables.js'%}"></script>
+<link rel="stylesheet" href="{% static 'jquery_static/css/fruits_vegetables.css'%}" />
+
+<fieldset id = 'left'>
+    <legend><b>Fruits</b></legend>
+    <ol id = 'fruits'>
+        <li id = 'mango'>Manga</li>
+        <li id = 'carrot'>Carrot</li>
+        <li id = 'banana'>Banana</li>
+        <li id = 'tomata'>Tomato</li>
+        <li id = 'broccoli'>Broccoli</li>
+        <li id = 'strawberry'>Strawberry</li>
+        <li id = 'broccoli'>Broccoli</li>
+        <li id = 'orange'>Orange</li>
+    </ol>
+</fieldset>
+
+
+<fieldset id = 'right'>
+    <legend><b>Vegetables</b></legend>
+    <ol id = 'vegetables'>
+        <li id = 'cherry'>Cherry</li>
+        <li id = 'pumpkin'>Pumpkin</li>
+        <li id = 'apple'>apple</li>
+        <li id = 'potato'>Potato</li>
+    </ol>
+</fieldset>
+
+
+
+{%endblock%}

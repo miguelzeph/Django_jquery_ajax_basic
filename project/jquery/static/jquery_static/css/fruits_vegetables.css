@@ -1,0 +1,31 @@
+ol {
+    list-style-type:none;
+    width:170px;
+    height:480px;
+}
+
+li {
+    height:30px;
+    width:150px;
+    border:1px solid black;
+    margin:2px;
+    font-size:20px;
+    text-align:center;
+}
+
+#fruits li {
+    background-color: cyan;
+}
+
+#vegetables li {
+    background-color:salmon;
+}
+
+fieldset {
+    float:left;
+    margin:30px;
+    width:200px;
+    height:500px;
+    border:10px solid black;
+}
+
